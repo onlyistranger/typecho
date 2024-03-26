@@ -42,7 +42,7 @@ $db->addServer(array (
   'database' => $_ENV["TIDB_DATABASE"],
   'engine' => 'InnoDB',
   'port' => $_ENV["TIDB_PORT"],
-  'sslCa' => '/etc/ssl/certs/ca-certificates.crt',
+  'sslCa' => '/etc/pki/tls/certs/ca-bundle.crt',
   'sslVerify' => true,
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
