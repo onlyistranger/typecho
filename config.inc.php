@@ -41,7 +41,7 @@ $db->addServer(array (
   'charset' => 'utf8mb4',
   'database' => $_ENV["TIDB_DATABASE"],
   'engine' => 'InnoDB',
-  'port' => 'TIDB_PORT',
+  'port' => $_ENV["TIDB_PORT"],
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
 
