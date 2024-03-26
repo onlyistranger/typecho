@@ -33,7 +33,7 @@ require_once 'Typecho/Common.php';
 Typecho_Common::init();
 
 /** 定义数据库参数 */
-$db = new Typecho_Db('Pdo_Mysql','myblog_');
+$db = new Typecho_Db('Pdo_Mysql','wl_');
 $db->addServer(array (
   'host' =>  $_ENV["TIDB_HOST"],
   'user' => $_ENV["TIDB_USER"],
