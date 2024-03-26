@@ -40,7 +40,7 @@ $db->addServer(array (
   'password' => $_ENV["TIDB_PASSWORD"],
   'charset' => 'utf8mb4',
   'database' => $_ENV["TIDB_DATABASE"],
-  'engine' => 'MyISAM',
+  'engine' => 'InnoDB',
   'port' => 'TIDB_PORT',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
