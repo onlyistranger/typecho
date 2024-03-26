@@ -41,8 +41,7 @@ $db->addServer(array (
   'charset' => 'utf8mb4',
   'database' => $_ENV["TIDB_DATABASE"],
   'engine' => 'InnoDB',
-  'sslCa' => $_ENV["PLANETSCALE_SSL_CERT_PATH"],
-  'sslVerify' => true,
+  'port' => 'TIDB_PORT',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
 
