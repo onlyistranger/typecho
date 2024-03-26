@@ -38,10 +38,12 @@ $db->addServer(array (
   'host' =>  $_ENV["TIDB_HOST"],
   'user' => $_ENV["TIDB_USER"],
   'password' => $_ENV["TIDB_PASSWORD"],
-//   'charset' => 'utf8mb4',
+  'charset' => 'utf8mb4',
   'database' => $_ENV["TIDB_DATABASE"],
-//   'engine' => 'InnoDB',
+  'engine' => 'InnoDB',
   'port' => $_ENV["TIDB_PORT"],
+  'sslCa' => '/etc/ssl/certs/ca-certificates.crt',
+  'sslVerify' => true,
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
 
